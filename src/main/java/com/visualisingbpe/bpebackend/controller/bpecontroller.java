@@ -8,10 +8,7 @@ import java.util.Map;
 
 @RestController
 @RequestMapping("/api/bpe")
-@CrossOrigin(origins = {
-        "http://localhost:3000",
-        "https://bpe-tokenizer-visualizer-1e7jop45k-muqeetmohds-projects.vercel.app"
-})
+@CrossOrigin(origins = "*")
 public class bpecontroller {
 
     private final bpeservice service;
